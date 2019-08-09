@@ -1,8 +1,5 @@
 #Atmospheric river detection algorithm using IWV. Version 1.0.1
 
-#Note: After Wille et al. (2019) was accepted, a small error was discovered on line 101
-#Originally "if lat_mask[coast_idx[x2_idx[i]]] >= y_idx[i]:" was "if lat_mask[coast_idx[x2[i]]] >= y_idx[i]:
-#The error correction slightly increases the amount of detected AR landfalls, but does not significantly impact the results.
 
 from netCDF4 import Dataset
 import numpy as np
